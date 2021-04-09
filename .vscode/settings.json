@@ -1,0 +1,22 @@
+{
+  "files.exclude": {
+    "**/Cargo.lock": true,
+    "**/LICENSE": true,
+    "**/go.sum": true,
+    "**/.git*": true,
+    "*.md": true,
+
+    "general-docs": true,
+    "**/target/": true,
+    "**/pkg/*.js": true,
+    "**/pkg/*.ts": true,
+    "**/pkg/package.json": true
+  },
+  "go.testFlags": [
+    "-v",
+    //"-buildmode=exe" // Uncomment this on windows. Is is needed due to an issue caused by gcc when compiling the unit tests
+  ],
+  "rust-analyzer.updates.askBeforeDownload": false,
+  "rust-analyzer.linkedProjects": ["smartcontract/rust/Cargo.toml"]
+  //"editor.formatOnSave": true
+}
